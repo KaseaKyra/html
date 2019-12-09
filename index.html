@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML - CSS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/meiryo.ttc">
+    <link rel="stylesheet" href="fonts/meiryob.ttc">
+</head>
+<body>
+<div class="bg-dark wrap-container">
+    <div class="container-fluid bg-white" id="content">
+        <header class="text-center header">
+            <h1 class="text-color">アカウント新規作成</h1>
+        </header>
+        <main>
+            <div class="text-center logo">
+                <a href="#"><img class="img-fluid" src="image/logo.png" alt=""></a>
+            </div>
+            <div class="introduction text-center">
+                <h2 class="font-weight-bold text-color">ようこそ︕</h2>
+                <div class="introduction-body">
+                    <p>アカウントを新規作成するにはアカウント情報の登録が必要です。 </p>
+                    <p>必須項⽬をご⼊⼒の上、「確認」ボタンを押してください。</p>
+                </div>
+            </div>
+            <div class="row">
+                <form action="#" method="POST">
+                    <div class="form-header">
+                        <div class="form-group">
+                            <p>仮登録メールアドレス</p>
+                            <p>example@zuiso.net</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div for="name" class="font-weight-cold text-color">
+                                ニックネーム<span class="label-span">必須</span>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group" id="group-name">
+                                <input type="text" id="name" name="name" class="form-control custom-input">
+                                <div class="message">６４⽂字以内で⼊⼒してください。</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    <div class="form-group">-->
+                    <!--                        <label for="password" class="font-weight-cold d-inline-block text-color">パスワードの⼊⼒<span>必須</span></label>-->
+                    <!--                        <div class="input-group">-->
+                    <!--                            <input type="password" id="password" name="password" class="form-control"-->
+                    <!--                                   placeholder="パスワードの⼊⼒">-->
+                    <!--                            <div class="message">６〜２０⽂字の半⾓の英数字または記号で⼊⼒してください。<br>英字と数字の両⽅を含めてください。</div>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="form-group">-->
+                    <!--                        <label for="rePassword">パスワードの再⼊⼒<span>必須</span></label>-->
+                    <!--                        <div class="input-group">-->
+                    <!--                            <input type="password" id="rePassword" name="rePassword" class="form-control"-->
+                    <!--                                   placeholder="パスワードの⼊⼒">-->
+                    <!--                            <div class="message">確認のため、もう⼀度同じパスワードを⼊⼒してください。</div>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="form-group">-->
+                    <!--                        <label for="gender">性別<span>必須</span></label>-->
+                    <!--                        <div class="input-group group-radio">-->
+                    <!--                            <div>-->
+                    <!--                                <label class="gender">男性-->
+                    <!--                                    <input type="radio" value="0" checked="" name="gender" class="radio-control">-->
+                    <!--                                    <i class="radiomark"></i>-->
+                    <!--                                </label>-->
+                    <!--                            </div>-->
+                    <!--                            <div>-->
+                    <!--                                <label class="gender">⼥性-->
+                    <!--                                    <input type="radio" value="1" name="gender" class="radio-control">-->
+                    <!--                                    <i class="radiomark"></i>-->
+                    <!--                                </label>-->
+
+                    <!--                            </div>-->
+                    <!--                            <div>-->
+                    <!--                                <label class="gender">その他-->
+                    <!--                                    <input type="radio" value="2" name="gender" class="radio-control">-->
+                    <!--                                    <i class="radiomark"></i>-->
+                    <!--                                </label>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="form-group">-->
+                    <!--                        <label for="birthday">⽣年⽉⽇</label>-->
+                    <!--                        <div class="input-group">-->
+                    <!--                            <div class="input-group">-->
+                    <!--                                <select name="birthday" id="birthday" class="form-control">-->
+                    <!--                                    <option value="0" disabled="" selected="">⽣年⽉⽇を選択</option>-->
+                    <!--                                    <option value="1">1990</option>-->
+                    <!--                                    <option value="2">1991</option>-->
+                    <!--                                    <option value="3">1992</option>-->
+                    <!--                                    <option value="4">1993</option>-->
+                    <!--                                    <option value="5">1994</option>-->
+                    <!--                                    <option value="6">1995</option>-->
+                    <!--                                    <option value="7">1996</option>-->
+                    <!--                                    <option value="8">1997</option>-->
+                    <!--                                    <option value="9">1998</option>-->
+                    <!--                                    <option value="10">1999</option>-->
+                    <!--                                    <option value="11">2000</option>-->
+                    <!--                                </select>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="form-group">-->
+                    <!--                        <div class=""></div>-->
+                    <!--                        <div class="input-group">-->
+                    <!--                            <label class="showage">プロフィールで年代を表⽰-->
+                    <!--                                <input type="checkbox">-->
+                    <!--                                <i class="checkmark"></i>-->
+                    <!--                            </label>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <div class="rule">
+                        <h1 class="text-center">利⽤規約</h1>
+                        <div class="rule-body">
+                            <p>この利⽤規約（以下，「本規約」といいます。）は，＿＿＿＿＿（以下，「当社」といいます。
+                                ）がこのウェブサイト上で提供するサービス（以下，「本サービス」といいます。）の利⽤条件
+                                を定めるものです。登録ユーザーの皆さま（以下，「ユーザー」といいます。）には，本規約に
+                                従って本サービスをご利⽤いただきます。登録ユーザーの皆さま（以下，「ユーザー」といいま
+                                す。）には，本規約に従って本サービスをご利⽤いただきます。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="text-white font-weight-bold btn-send">同意して、登録内容を確認する
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="clearfix footer">
+            <div class="float-left">© LECRE Inc. All rights reserved.</div>
+            <div class="float-right">運営会社<img src="image/bootom-logo.png" alt=""></div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
